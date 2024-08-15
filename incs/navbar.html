@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="css/cubo.css">
+
+<nav>
+    <ul>
+        <div class="left">
+            <div class="scene">
+                <a href="">
+                <div class="cube">
+                        <div class="cube__face cube__face--left"></div>
+                        <div class="cube__face cube__face--right"></div>
+                        <div class="cube__face cube__face--top"></div>
+                        <div class="cube__face cube__face--bottom"></div>
+                        <div class="cube__face cube__face--front"></div>
+                        <div class="cube__face cube__face--back"></div>
+                </div>
+            </a>
+            </div>
+        </div>
+
+
+        <li class="objeto-a-flutuar"><a href="register.php" class="lista">Cadastrar</a></li>
+        <li class="objeto-a-flutuar"><a href="remove.php" class="lista">Remover</a></li>
+        <li class="objeto-a-flutuar"><a href="questions.php" class="lista">Perguntas</a></li>
+        <li class="objeto-a-flutuar"><a href="game.php" class="lista">Jogo</a></li>
+        <li class="objeto-a-flutuar"><a href="navegation.php" class="lista">Início</a></li>
+    </ul>
+</nav>
+
+<style>
+    /*NAVBAR*/
+
+    nav {
+
+        padding: 2.5% 0;
+        padding-right: 5%;
+        background-color: #1B121E;
+        margin-bottom: 4.5%;
+    }
+
+    .left {
+
+        margin-left: 5%;
+    }
+
+    ul li a {
+        text-decoration: none;
+        text-align: center;
+        padding: 15px;
+        color: white;
+        transition: all 0.5s ease;
+    }
+
+    ul li {
+        float: right;
+        margin-right: 10px;
+    }
+
+    ul li a:hover {
+
+
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    ul {
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    .objeto-a-flutuar:hover {
+        -webkit-transform: translateY(-8px);
+        -moz-transform: translateY(-8px);
+        -ms-transform: translateY(-8px);
+        -o-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+    .objeto-a-flutuar {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        -moz-transition: 0.5s;
+        transition: 0.5s;
+    }
+</style>
