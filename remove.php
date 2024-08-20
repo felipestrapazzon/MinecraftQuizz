@@ -29,11 +29,11 @@
         <div class="spaccingB">
             <h1 class="tittle">Remover Perguntas</h1>
         </div>
-        <form action="./src/cadastrar.php" method="POST">
+        <form action="./src/remover.php" method="POST">
 
             <div class="spaccingB spaccingT">
                 <label class="label" for="">ID Da Pergunta</label>
-                <input type="number" class="input" style="padding-right: 26%;" id="input" name="pergunta" placeholder="" require>
+                <input type="number" class="input" style="padding-right: 26%;" id="input" name="idquestao" placeholder="" require>
             </div>
 
             <div class="box">

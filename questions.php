@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -44,41 +44,24 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Qual é a capital da França?</td>
-                    <td>Paris</td>
-                    <td>Londres</td>
-                    <td>Berlim</td>
-                    <td>Madri</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>Qual é a capital da França?</td>
-                    <td>Paris</td>
-                    <td>Londres</td>
-                    <td>Berlim</td>
-                    <td>Madri</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>Qual é a capital da França?</td>
-                    <td>Paris</td>
-                    <td>Londres</td>
-                    <td>Berlim</td>
-                    <td>Madri</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td class="Nada">Qual é a capital da França?</td>
-                    <td class="Nada">Paris</td>
-                    <td class="Nada">Londres</td>
-                    <td class="Nada">Berlim</td>
-                    <td class="Nada">Madri</td>
-                    <td class="Nada">A</td>
-                </tr>
+                <?php
+                require_once "./src/PerguntasDAO.php";
+                $perguntas = PerguntasDAO::listarPergunta();
+                foreach($perguntas as $pergunta){
+                    ?>
+                    <tr>
+                        <td><?=$pergunta['questao']?></td>
+                        <td><?=$pergunta['opcaoA']?></td>
+                        <td><?=$pergunta['opcaoB']?></td>
+                        <td><?=$pergunta['opcaoC']?></td>
+                        <td><?=$pergunta['opcaoD']?></td>
+                        <td><?=$pergunta['resposta']?></td>
+                    </tr>
+                    <?php
+                };
+                    ?>
             </tbody>
         </table>
     </div>
 </body>
-
 </html>

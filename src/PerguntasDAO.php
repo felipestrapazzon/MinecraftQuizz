@@ -1,18 +1,20 @@
 <?php   
+session_start();
 
-require_once './ConexaoBD.php';
+require_once 'ConexaoBD.php';
 
 class PerguntasDAO{
 
 public static function listarPergunta() {
 
-    $random = rand(1,20);
-
-    $sql = "select ";
+    $sql = "select * from questoes where idtema=11";
     
         $conexao = ConexaoBD::conectar();
     
-        $conexao->exec($sql);
+        $perguntas = $conexao->query($sql);
+
+        return $perguntas;
+
 
 }
 
@@ -33,7 +35,7 @@ public static function cadastrarPergunta($dados){
 
 public static function remover($idquestao)
     {
-        $sql = "delete from produto where idproduto='$idquestao'";
+        $sql = "delete from questoes where idquestao='$idquestao'";
 
         $conexao = ConexaoBD::conectar();
         $conexao->exec($sql);

@@ -16,6 +16,7 @@
 body {
 
   background-color: #1B121E;
+  /* background-color: white; */
   font-family: Poppins;
 
 }
@@ -94,6 +95,21 @@ body {
 #input {
 
   width: 600px;
+}
+
+.input-Q {
+
+  max-width: 500px;
+  height: 44px;
+  background-color: #d1d6fd0a;
+  border-radius: .5rem;
+  padding-right: 120px;
+  padding-left: 20px;
+  color: white;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
 
 #resposta {

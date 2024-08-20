@@ -1,4 +1,6 @@
 <?php
 require_once "./PerguntasDAO.php";
+    
+PerguntasDAO::remover($_POST['idquestao']);
 
-PerguntasDAO::remover($_GET['idquestao']);
+header("Location:../remove.php");

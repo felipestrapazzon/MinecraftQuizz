@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,7 +38,7 @@
 
                 <div class="spaccingB spaccingT col-6">
                     <label class="label" for="">Pergunta</label>
-                    <input type="text" class="input" style="padding-right: 26%;" id="input" name="pergunta" placeholder="" require>
+                    <input type="text" class="input-Q" id="input" name="pergunta" placeholder="" require>
                 </div>
 
                 <div class="clearfix spaccingB col-6">
