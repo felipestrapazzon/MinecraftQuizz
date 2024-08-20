@@ -17,7 +17,7 @@
 
     <title>Jogo - Minecraft</title>
 </head>
-<body style="background: url(img/GameBG.jpg); background-size: cover; height: 100vh; background-position: bottom;">
+<body>
     
 </body>
 </html>
