@@ -2,7 +2,7 @@
 
 //ALL FUNCTIONS HERE...
 
-// require_once "ConexaoBD.php";
+require_once "ConexaoBD.php";
 
 // class ProdutoDAO {
 
@@ -14,7 +14,7 @@
 //         $marca = $dados['marca'];
         
 //         //INSERIR DADOS NO SQL
-    
+    e esse SQL insano de mais em. ass: matheus do SQL
 //         $sql = "insert into produto (nome, valor, quantidade, marca) values ('$nome', $valor, $quantidade, '$marca')";
     
 //         $conexao = ConexaoBD::conectar();
